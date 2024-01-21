@@ -23,20 +23,15 @@
         }
     </style>
 </head>
-
 <body>
 
     <div class="form d-flex justify-content-center align-items-center flex-column  shadow-sm" style="height: 100vh">
         <div class="bg col-8 col-md-5 rounded shadow-sm  p-4">
-            <h3 class="text-center">Đăng Ký</h3>
+            <h3 class="text-center">Quên Mật Khẩu</h3>
             <!-- style="max-width: 25%; width: 25%" -->
             <div class="">
-                <label for="inputPassword5" class="form-label">First name & Last name </label>
-                <div class="input-group">
-                    <!-- <span class="input-group-text">First and </span> -->
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
-                </div>
+                <h6>Vui lòng nhập Username và email của bạn để tiến hành nhận mật khẩu mới</h6>
+                
                 <label for="inputPassword5" class="form-label">User name</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">@</span>
@@ -51,36 +46,20 @@
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2">@gmail.com</span>
                 </div>
-                <label for="inputPassword5" class="form-label">Phone Number</label>
-                <div class="input-group mb-3 d-flex align-items-center">
-                    <div class="col-4"> <!-- Sử dụng col-4 để làm cho phần chọn chiếm 20% chiều rộng -->
-                        <select class="form-select" id="inputGroupSelect01">
-                            <option selected>Choose...</option>
-                            <option value="1">+84</option>
-                            <option value="2">+86</option>
-                            <option value="3">+1</option>
-                        </select>
-                    </div>
-                    <div class="col-8"> <!-- Sử dụng col-8 để làm cho phần nhập chiếm 80% chiều rộng -->
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    </div>
-                </div>
-
-
-
-                <label for="inputPassword5" class="form-label">Password</label>
+                
+                <!-- <label for="inputPassword5" class="form-label">Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                 <div id="passwordHelpBlock" class="form-text">
                 </div>
                 <label for="inputPassword5" class="form-label">Confirm Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                 <div id="passwordHelpBlock" class="form-text">
-                </div>
+                </div> -->
                 <div class="col-auto d-flex justify-content-between align-items-center mt-3">
                     <button type="submit" class="btn btn-primary mb-3" href="../webcon/Dangnhap.html" data-bs-toggle="modal"
-                    data-bs-target="#modal">Đăng Ký</button>
+                    data-bs-target="#modal">Nhận</button>
                     <!-- <ul class="align-items-center "><a href="#" class="text-decoration-none " >Quên mật khẩu?</a></ul> -->
-                    <ul class="align-items-center "><a href="../webcon/Dangnhap.html" class="text-decoration-none ">Bạn đã có tài khoản?</a>
+                    <ul class="align-items-center "><a href="../webcon/Dangnhap.html" class="text-decoration-none ">Đăng nhập bằng tài khoản khác?</a>
                     </ul>
                 </div>
             </div>
@@ -88,23 +67,24 @@
         <footer class="mt-4  text-light ">
             <small>&copy 2024. Design by Dino</small>
         </footer>
-    </div>
- <!-- modal  -->
- <div class="modal" tabindex="-1" id="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Thành công</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Đăng kí tài khoản thành công !</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <!-- modal  -->
+        <div class="modal" tabindex="-1" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thành công</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mật khẩu mới đã được gửi vào email của bạn !</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 </body>
