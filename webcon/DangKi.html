@@ -77,8 +77,7 @@
                 <div id="passwordHelpBlock" class="form-text">
                 </div>
                 <div class="col-auto d-flex justify-content-between align-items-center mt-3">
-                    <button type="submit" class="btn btn-primary mb-3" href="../webcon/Dangnhap.html" data-bs-toggle="modal"
-                    data-bs-target="#modal">Đăng Ký</button>
+                    <button type="submit" class="btn btn-primary mb-3" onclick="chuyenHuong()" >Đăng Ký</button>
                     <!-- <ul class="align-items-center "><a href="#" class="text-decoration-none " >Quên mật khẩu?</a></ul> -->
                     <ul class="align-items-center "><a href="../webcon/Dangnhap.html" class="text-decoration-none ">Bạn đã có tài khoản?</a>
                     </ul>
@@ -89,22 +88,11 @@
             <small>&copy 2024. Design by Dino</small>
         </footer>
     </div>
- <!-- modal  -->
- <div class="modal" tabindex="-1" id="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Thành công</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Đăng kí tài khoản thành công !</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" href="../webcon/Dangnhap.html">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-    </div>
+    <script>
+        function chuyenHuong() {
+            alert("Đăng Kí tài khoản thành công!");
+            window.location.href = "../webcon/Dangnhap.html"; // Thay thế URL_CUA_TRANG_MONG_MUON bằng URL thực tế
+        }
+    </script>
 </div>
 </body>
